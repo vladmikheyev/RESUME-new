@@ -6,8 +6,8 @@ let resultList = ''
 // Iterate and build result list elements
  for (const n in results) {
 const item = store[results[n].ref]
-resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a></p>'
-resultList += '<p>' + item.content.substring(0, 150) + '...</p></li>'
+resultList += '<li><p><a href="' + item.url + '">' + item.title + '</a><br></p>'
+resultList += '<p>' + item.content.substring(0, 150) + '...</p><br></li>'
 }
 searchResults.innerHTML = resultList
 } else {
@@ -34,7 +34,7 @@ for (const key in window.store) {
 this.add({
 id: key,
 title: window.store[key].title,
-tags: window.store[key].category,
+tags: window.store[key].tags,
 content: window.store[key].content
 })
 }
