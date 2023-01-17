@@ -5,10 +5,18 @@ date = "2023-01-12"
 author = "Владислав Михеев"
 +++
 
-{{< accord0 >}}
- Московский Энергетический Институт. Радиотехнический факультет.
+![](/img/my-photo.jpg)
 
- Окончил в 1986г по специальности: инженер радиоэлектронных устройств.
+{{< accord0 >}}
+
+##### 1. Высшее образование
+
+Московский Энергетический Институт. Радиотехнический факультет. Год окончания 1986г. Специальность: радиоэлектронные устройства.
+
+##### 2. Среднее образование
+
+гор.Москва. Школа №76 с углубленным изучением анлийского языка.
+
 {{< accord1 >}}
 
 ##### 1. Windows
@@ -43,17 +51,17 @@ Avaya, Tp-Link, Ubiquti; OpenWRT
 
 NetXMS, Avaya Wireless LAN Orchestration, VEEAM, SNMP, wireshark, проч.
 
-##### 9. WEB-технологии
-
-Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, postgresql. Создание, размещение статических сайтов. Сертификаты от Let's Encrypt.
-
-##### 10. Информационная безопасность
+##### 9. Информационная безопасность
 
 ipsec, Kaspersky security
 
+##### 10. WEB-технологии
+
+Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, postgresql. Создание, размещение статических сайтов. Сертификаты от Let's Encrypt.
+
 ##### 11. Frontend-навыки и используемые инструменты разработчика
 
-html, css, scss, bootstrap; Hugo; Atom, VS Code, git
+Frontend: Html, css, scss, bootstrap; Инструменты: Hugo static site generator; Atom, VS Code, Codepen.io, Formspree.io, pagefind.app, git, проч.
 
 ##### 12. Общие навыки
 
