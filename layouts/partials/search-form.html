@@ -1,7 +1,19 @@
-<form id="search"
-action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
-<label hidden for="search-input">Поиск по резюме</label>
-<input style="width: 210px; background-color: #F0F0F0" type="text" id="search-input" name="query"
-placeholder="введите слово/фразу целиком">
-<input type="submit" value="поиск">
-</form>
+<!-- search form for pagefind -->
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search",
+        showImages: false,
+        translations: {
+        placeholder: "ПОИСК",
+        zero_results: "ПО ЗАПРОСУ: [SEARCH_TERM] - НИЧЕГО НЕ НАЙДЕНО",
+        load_more: "ПОКАЗАТЬ ЕЩЕ...",
+        many_results: "НАЙДЕНО [COUNT] СТРАНИЦ ПО ЗАПРОСУ: [SEARCH_TERM]",
+        one_result: "НАЙДЕНА [COUNT] СТРАНИЦА ПО ЗАПРОСУ: [SEARCH_TERM]",
+    }
+   });
+    });
+</script><br>
+  <!-- end search form for pagefind -->

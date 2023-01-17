@@ -2,8 +2,8 @@
 <div class="d:flex flex:col">
     {{- partial "prose.html" . -}}
 
-    <h2 class="my:1em">МОЯ РАБОТА</h2>
-
+    <h2 class="my:1em">МОЯ РАБОТА</h2><br>
+<div>{{ partial "search-form.html" . }}</div>
     {{- range where site.RegularPages "Type" "in" site.Params.mainSections -}}
 
     {{- partial "li.html" ( dict "url" .Permalink "title" .Title "subTitle" (.Date | time.Format (":date_medium")) ) -}}

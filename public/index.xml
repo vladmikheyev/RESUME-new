@@ -6,59 +6,34 @@
     <description>Recent content on ВЛАДИСЛАВ МИХЕЕВ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mikheyev.tk/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022-2023, Владислав Михеев; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://mikheyev.tk/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>поиск</title>
-      <link>https://mikheyev.tk/post/pagef/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <title>ОБО МНЕ</title>
+      <link>https://mikheyev.tk/about/</link>
+      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://mikheyev.tk/post/pagef/</guid>
-      <description>window.addEventListener(&#39;DOMContentLoaded&#39;, (event) = {new PagefindUI({ element: &#34;#search&#34; });});</description>
+      <guid>https://mikheyev.tk/about/</guid>
+      <description>ОБАЗОВАНИЕМосковский Энергетический Институт. Радиотехнический факультет.
+Окончил в 1986г по специальности: инженер радиоэлектронных устройств. НАВЫКИ1. Windows администрирование серверов Windows; DHCP, DNS, active directory, MS Office
+2. Linux администрирование серверов linux, Ubuntu, Debian, RedHat, Centos; bash - базовый уровень; Docker
+3. NAS Synology (администрирование), Nextcloud (установка, настройка, администрирование)
+4. Сетевые технологии, модель osi, сетевое оборудование Администрирование коммутаторов (cisco, avaya, extreme, проч.), межсетевых экранов (Cisco, Fortigate); настройка сетевых и межсетевых подключений tcp/ip: multicast, stp, rstp, vlan, nat, VPN, проч.</description>
     </item>
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://mikheyev.tk/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>ГАУ ВО «Дирекция по эксплуатации стадиона «Волгоград Арена»</title>
+      <link>https://mikheyev.tk/post/01-gau_vo_stadion_volgograd_arena/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mikheyev.tk/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://mikheyev.tk/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikheyev.tk/post/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://mikheyev.tk/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikheyev.tk/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://mikheyev.tk/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikheyev.tk/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://mikheyev.tk/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikheyev.tk/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <guid>https://mikheyev.tk/post/01-gau_vo_stadion_volgograd_arena/</guid>
+      <description>С января 2019г. по настоящее время
+Государственная организация
+Инженер   Осуществление контроля за качеством строительно-монтажных и пуско-наладочных работ при установке технических средств, включая систему видеонаблюдения на стадионе &amp;ldquo;Волгоград-Арена&amp;rdquo;;
+  Обеспечение правильного функционирования инженерно-технических средств;
+  Осуществление контроля за техническим состоянием инженерно-технических средств и определение пригодности к дальнейшей эксплуатации;
+  Организация технического обслуживания и настройки инженерно-технических средств;
+  Осуществление разработки перспективных и текущих планов (графиков) различных видов ремонта инженерно-технических средств , а также мер по улучшению их эксплуатации и обслуживания;</description>
     </item>
     
     <item>
@@ -68,6 +43,22 @@
       
       <guid>https://mikheyev.tk/post/02-sportinzhiniring/</guid>
       <description>С декабря 2017г. по январь 2020г.
+Государственная организация
+Строительство, недвижимость, эксплуатация, проектирование
+Управление и эксплуатация недвижимости
+Инженер   Осуществление контроля за качеством строительно-монтажных и пуско-наладочных работ при установке технических средств охраны , включая систему видеонаблюдения на стадионе &amp;ldquo;Волгоград-Арена&amp;rdquo;;
+  Обеспечение правильного функционирования инженерно-технических средств охраны;
+  Осуществление контроля за техническим состоянием инженерно-технических средств охраны и определение пригодности к дальнейшей эксплуатации;
+  Организация технического обслуживания и настройки инженерно-технических средств охраны;</description>
+    </item>
+    
+    <item>
+      <title>ООО «ТАСК-Т»</title>
+      <link>https://mikheyev.tk/post/03-task-t/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mikheyev.tk/post/03-task-t/</guid>
+      <description>С июля 2017г. по декабрь 2017г.
 Государственная организация
 Строительство, недвижимость, эксплуатация, проектирование
 Управление и эксплуатация недвижимости
