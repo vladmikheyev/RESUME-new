@@ -9,11 +9,11 @@ author = "Владислав Михеев"
 
 {{< accord0 >}}
 
-##### 1. Высшее образование
+##### 1. Высшее
 
 Московский Энергетический Институт. Радиотехнический факультет. Год окончания 1986г. Специальность: радиоэлектронные устройства.
 
-##### 2. Среднее образование
+##### 2. Среднее
 
 гор.Москва. Школа №76 с углубленным изучением анлийского языка.
 
@@ -21,51 +21,55 @@ author = "Владислав Михеев"
 
 ##### 1. Windows
 
-администрирование серверов Windows; DHCP, DNS, active directory, MS Office
+Администрирование серверов Windows; DHCP, DNS, active directory, MS Office
 
 ##### 2. Linux
 
-администрирование серверов linux, Ubuntu, Debian, RedHat, Centos; bash - базовый уровень; Docker
+Администрирование серверов linux: Ubuntu, Debian, RedHat, Centos; bash - базовый уровень; Docker
 
 ##### 3. NAS
 
 Synology (администрирование), Nextcloud (установка, настройка, администрирование)
 
-##### 4. Сетевые технологии, модель osi, сетевое оборудование
+##### 4. Видеонаблюдение
 
-Администрирование коммутаторов (cisco, avaya, extreme, проч.), межсетевых экранов (Cisco, Fortigate); настройка сетевых и межсетевых подключений tcp/ip: multicast, stp, rstp, vlan, nat, VPN, проч.
+ISS SecurOS, SecurOS IVS VideoWall (администрирование); Dallmeier Panomera Streaming Server, Viewing Client, SMAVIA Recording Server (администрирование); Trassir-Server, client
 
-##### 5. Системы виртуализации
+##### 5. Сетевые технологии, модель osi, сетевое оборудование
 
-Vmware ESXI, Vcenter, kvm, hyper-v
+Коммутаторы Cisco, Avaya, Extreme, проч. (администрирование), межсетевые экраны Cisco, Fortigate (администрирование); настройка сетевых, межсетевых подключений tcp/ip: multicast, stp, rstp, vlan, nat, проч.; развертывание VPN сетей Wireguard.
 
-##### 6. Телефония, voip
+##### 6. Системы виртуализации
 
-Avaya CM.
+VMware (ESXI, Vcenter), KVM, Hyper-V, Docker
 
-##### 7. WI-FI networks
+##### 7. Системы мониторинга, логирования и управления
 
-Avaya, Tp-Link, Ubiquti; OpenWRT
+NetXMS, Avaya Wireless LAN Orchestration, VEEAM, SNMP, Syslog-NG, стек ELK, Ansible, wireshark, проч.
 
-##### 8. Системы мониторинга сетей и управления
+##### 8. Телефония, voip
 
-NetXMS, Avaya Wireless LAN Orchestration, VEEAM, SNMP, wireshark, проч.
+Avaya AURA CM, SM, US, CS, ASBCE, проч. (администрирование), IP-телефонные аппараты Avaya (настройка).
 
-##### 9. Информационная безопасность
+##### 9. WI-FI networks
+
+Avaya Wireless LAN Orchestration (администрирование), Tp-Link, Ubiquti; OpenWRT
+
+##### 10. Информационная безопасность
 
 ipsec, Kaspersky security
 
-##### 10. WEB-технологии
+##### 11. WEB-технологии
 
-Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, postgresql. Создание, размещение статических сайтов. Сертификаты от Let's Encrypt.
+Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, проч.. Создание, размещение статических сайтов. Сертификаты от Let's Encrypt.
 
-##### 11. Frontend-навыки и используемые инструменты разработчика
+##### 12. Frontend-навыки и используемые инструменты разработчика
 
-Frontend: Html, css, scss, bootstrap; Инструменты: Hugo static site generator; Atom, VS Code, Codepen.io, Formspree.io, pagefind.app, git, проч.
+Frontend: HTML, CSS, SASS/SCSS, grid, flex, bootstrap, GULP, Prepros, ; Инструменты: Hugo static site generator; Atom, VS Code, Codepen.io, git, проч.
 
-##### 12. Общие навыки
+##### 13. Общие навыки
 
-английский язык, работа в условиях многозадачности, работа в команде, календарно-сетевое планирование, управление проектами, работа с большим объёмом информации, грамотная речь, деловая переписка, проч.
+Английский язык, работа в условиях многозадачности, работа в команде, календарно-сетевое планирование, управление проектами, работа с большим объёмом информации, грамотная речь, деловая переписка, проч.
 
 {{< accord2 >}}
 
