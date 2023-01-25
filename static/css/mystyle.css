@@ -1,3 +1,159 @@
+/* Dark/Light Mode Support Modifications
+-------------------------------------------------- */
+a, a:hover {
+    color: var(--link-white-color);
+}
+
+nav {
+    color: var(--link-white-color);
+    background-color: var(--bg-color);
+}
+
+body {
+    color: var(--link-white-color);
+    background-color: var(--bg-color);
+}
+
+.dropdown-menu {
+    background: var(--bg-color);
+}
+
+.dropdown-item {
+    color: var(--link-white-color);
+}
+
+hr {
+    background-color: var(--link-white-color);
+    height: 1px;
+    border: 0;
+}
+
+/* Dark/Light Mode Support
+-------------------------------------------------- */
+/*Light*/
+
+  :root {
+      --font-color: #000;
+      --reverse-font-color: #fff;
+      --link-color: #000;
+      --link-white-color: rgb(57,57,57);
+      --bg-color: rgb(255,255,255);
+  }
+  /*Dark*/
+  [data-theme="dark"] {
+      --font-color: #fff;
+      --reverse-font-color: #000;
+      --link-color: #0a86da;
+      --link-white-color: #c1bfbd;
+      --bg-color: #333;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+
+  }
+
+  *:after, *:before {
+    box-sizing: border-box;
+  }
+
+  p:first-letter {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p + p {
+    margin-top: 10px;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  .input-radio-open:not(:checked) ~ .element__header .header__title--open {
+    display: block;
+  }
+  .input-radio-open:not(:checked) ~ .element__header .header__title--close {
+    display: none;
+  }
+  .input-radio-open:not(:checked) ~ .element__content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .input-radio-open:checked ~ .element__header .header__title--open {
+    display: none;
+  }
+  .input-radio-open:checked ~ .element__header .header__title--close {
+    display: block;
+  }
+  .input-radio-open:checked ~ .element__content {
+    height: 210px;
+    opacity: 1;
+    overflow: auto;
+  }
+
+  .accordeon {
+    align: left;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 640px) {
+    .accordeon {
+      max-width: 640px;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    .accordeon {
+      max-width: 960px;
+    }
+  }
+
+  .accordeon__element {
+    margin-top: 10px;
+  }
+
+  .header__title {
+    background-color: var(--link-white-color);
+    text-align: left;
+    padding: 10px 10px;
+    color: var(--reverse-font-color);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.25s ease;
+  }
+  .header__title .fa {
+    margin-right: 10px;
+  }
+  .header__title:hover {
+    color: rgb(147,158,174);
+    background-color: var(--link-white-color);
+  }
+
+  .element__content {
+    padding: 0 10px;
+    transition: height 0.25s ease, opacity 0.25s ease, padding 0s ease;
+  }
+
+  .content__wrapper {
+    color: #888;
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 1px solid #ee875d;
+  }
+
+  span {
+    color: var(--link-white-color);
+  }
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*
 .transition, ul li i:before, ul li i:after, p {
   transition: all 0.25s ease-in-out;
 }
@@ -17,6 +173,7 @@
 }
 
 html {
+  color: var(--link-white-color);
   width: 100%;
   height: 100%;
   perspective: 900;
@@ -24,6 +181,7 @@ html {
 }
 
 h1 {
+  color: var(--link-white-color);
   text-transform: uppercase;
   font-size: 36px;
   line-height: 42px;
@@ -32,6 +190,7 @@ h1 {
 }
 
 h2 {
+  color: var(--link-white-color);
   font-size: 26px;
   line-height: 34px;
   font-weight: 300;
@@ -42,7 +201,7 @@ h2 {
 }
 
 p {
-  color: rgba(48, 69, 92, 0.8);
+  color: var(--link-white-color);
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -56,12 +215,14 @@ p {
 }
 
 ul {
+  color: var(--font-color);
   list-style: none;
   perspective: 900;
   padding: 0;
   margin: 0;
 }
 ul li {
+  color: var(--font-color);
   position: relative;
   padding: 0;
   margin: 0;
@@ -144,3 +305,4 @@ ul li input[type=checkbox]:checked ~ i:after {
     transform: rotateX(0deg);
   }
 }
+*/

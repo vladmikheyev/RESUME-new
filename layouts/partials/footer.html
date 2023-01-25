@@ -6,3 +6,23 @@
 <script src="https://kit.fontawesome.com/67ed86a691.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<!-- <script>
+  const toggleTheme = () => {
+      const theme = localStorage.getItem('theme');
+      const htmlClassList = document.documentElement.classList;
+      const isDark = theme === 'dark';
+      htmlClassList.toggle('dark', !isDark);
+      htmlClassList.toggle('light', isDark);
+      localStorage.setItem('theme', isDark ? 'light' : 'dark');
+
+  };
+  document.getElementById('theme-toggle')
+          .addEventListener('click', toggleTheme, { passive: true })
+</script> -->
+
+<script type="module" src="/js/ThemeManager.js"></script>
+<script type="module">
+    import {ThemeManager} from '/js/ThemeManager.js';
+    new ThemeManager(document.getElementById('themeToggle'));
+</script>

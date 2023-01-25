@@ -9,12 +9,7 @@
 
     
     
-    <meta name="description" content="ОБРАЗОВАНИЕ1. Высшее Московский Энергетический Институт. Радиотехнический факультет. Год окончания 1986г. Специальность: радиоэлектронные устройства.
-2. Среднее гор.Москва. Школа №76 с углубленным изучением анлийского языка.
-НАВЫКИ1. Windows Администрирование серверов Windows; DHCP, DNS, active directory, MS Office
-2. Linux Администрирование серверов linux: Ubuntu, Debian, RedHat, Centos; bash - базовый уровень; Docker
-3. NAS Synology (администрирование), Nextcloud (установка, настройка, администрирование)
-4. Видеонаблюдение ISS SecurOS, SecurOS IVS VideoWall (администрирование); Dallmeier Panomera Streaming Server, Viewing Client, SMAVIA Recording Server (администрирование); Trassir-Server, client" />
+    <meta name="description" content=":root {--font-color: #000;--reverse-font-color: #fff;--link-color: #000;--link-white-color: rgb(57,57,57);--bg-color: rgb(255,255,255);}[data-theme=&#34;dark&#34;] {--font-color: #fff;--reverse-font-color: #000;--link-color: #0a86da;--link-white-color: #c1bfbd;--bg-color: #333;}* {margin: 0;padding: 0;list-style-type: none;box-sizing: border-box;}*:after, *:before {box-sizing: border-box;}p:first-letter {font-size: 20px;font-weight: bold;}p &#43; p {margin-top: 10px;}input[type=radio] {display: none;}.input-radio-open:not(:checked) ~ .element__header .header__title--open {display: block;}." />
     <meta name="author" content="Владислав Михеев" />
     
 
@@ -22,16 +17,14 @@
     <script src="https://unpkg.com/@master/style@1.5.0"></script>
     <script src="https://unpkg.com/@master/styles@1.13.0"></script>
     <script src="https://unpkg.com/master-styles-group"></script>
-    <script src="https://unpkg.com/themes.js"></script>
-    <script>window.themes = window.themes || new window.Themes()</script><link rel="stylesheet" type="text/css" href="/css/mystyle.css">
+  <link rel="stylesheet" type="text/css" href="/css/mystyle.css">
 
 <link
      rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
-   />
+     href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 </head>
 <body class="bg:fade-84@dark font:fade-16@dark">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:var(--bg-color) z:1000 ">
     <div class="
         h:full
         w:full
@@ -40,16 +33,17 @@
         px:32
         d:flex
         align-items:center
+
     ">
         <div>
-            <a href="/" class="mr-3 font:extralight">
+            <a href="/" class="mr-3 font:extralight color:var(--font-color) ">
               
               ВЛАДИСЛАВ МИХЕЕВ
               
             </a>
         </div>
 
-        <div class="ml:auto">  
+        <div class="ml:auto">
             
             
             
@@ -63,6 +57,9 @@
                 transition:150ms;ease-in
                 
             " href="/about/" title="">Обо мне</a>
+            &nbsp; &nbsp; &nbsp;
+            <button id="themeToggle"></button>
+
             
         </div>
     </div>
@@ -113,60 +110,226 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
 "><p><img src="/img/my-photo.jpg" alt=""></p>
-<ul>
-  <li>
-    <input type="checkbox" checked>
-    <i></i>
-    <h2>ОБРАЗОВАНИЕ</h2>
-    <p>
+<style>
+   
 
-<h5 id="1-высшее">1. Высшее</h5>
-<p>Московский Энергетический Институт. Радиотехнический факультет. Год окончания 1986г. Специальность: радиоэлектронные устройства.</p>
-<h5 id="2-среднее">2. Среднее</h5>
-<p>гор.Москва. Школа №76 с углубленным изучением анлийского языка.</p>
-</p>
+    :root {
+        --font-color: #000;
+        --reverse-font-color: #fff;
+        --link-color: #000;
+        --link-white-color: rgb(57,57,57);
+        --bg-color: rgb(255,255,255);
+    }
+     
+    [data-theme="dark"] {
+        --font-color: #fff;
+        --reverse-font-color: #000;
+        --link-color: #0a86da;
+        --link-white-color: #c1bfbd;
+        --bg-color: #333;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      box-sizing: border-box;
+
+    }
+
+    *:after, *:before {
+      box-sizing: border-box;
+    }
+
+    p:first-letter {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p + p {
+      margin-top: 10px;
+    }
+
+    input[type=radio] {
+      display: none;
+    }
+
+    .input-radio-open:not(:checked) ~ .element__header .header__title--open {
+      display: block;
+    }
+    .input-radio-open:not(:checked) ~ .element__header .header__title--close {
+      display: none;
+    }
+    .input-radio-open:not(:checked) ~ .element__content {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    .input-radio-open:checked ~ .element__header .header__title--open {
+      display: none;
+    }
+    .input-radio-open:checked ~ .element__header .header__title--close {
+      display: block;
+    }
+    .input-radio-open:checked ~ .element__content {
+      height: 210px;
+      opacity: 1;
+      overflow: auto;
+    }
+
+    .accordeon {
+      align: left;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 640px) {
+      .accordeon {
+        max-width: 640px;
+      }
+    }
+    @media screen and (min-width: 960px) {
+      .accordeon {
+        max-width: 960px;
+      }
+    }
+
+    .accordeon__element {
+      margin-top: 10px;
+    }
+
+    .header__title {
+      background-color: var(--link-white-color);
+      text-align: left;
+      padding: 10px 10px;
+      color: var(--reverse-font-color);
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.25s ease;
+    }
+    .header__title .fa {
+      margin-right: 10px;
+    }
+    .header__title:hover {
+      color: rgb(147,158,174);
+      background-color: var(--link-white-color);
+    }
+
+    .element__content {
+      padding: 0 10px;
+      transition: height 0.25s ease, opacity 0.25s ease, padding 0s ease;
+    }
+
+    .content__wrapper {
+      color: #888;
+      margin-top: 10px;
+      padding: 10px;
+      border-left: 1px solid #ee875d;
+    }
+
+    span {
+      color: var(--link-white-color);
+    }
+
+    h5 {
+      text-transform: uppercase;
+    }
+
+
+</style>
+
+<input type="radio" name="accordeon" id="close">
+<ul class="accordeon">
+  <li class="accordeon__element">
+    <input type="radio" name="accordeon" id="open1" class="input-radio-open">
+    <header class="element__header">
+      <label class="header__title header__title--open" for="open1">
+        <i class="fa fa-plus"></i>ОБРАЗОВАНИЕ
+      </label>
+      <label class="header__title header__title--close" for="close">
+        <i class="fa fa-minus"></i>ОБРАЗОВАНИЕ (Москва)
+      </label>
+    </header>
+    <div class="element__content">
+      <div class="content__wrapper">
+        <h5 id="1-высшее">1. Высшее</h5>
+        <span>Московский Энергетический Институт. Радиотехнический факультет. Год окончания 1986г. Специальность: радиоэлектронные устройства.</span>
+        <h5 id="2-среднее">2. Среднее</h5>
+        <span>гор.Москва. Школа №76 с углубленным изучением анлийского языка.</span>
+      </div>
+    </div>
   </li>
-  <li>
-    <input type="checkbox" checked>
-    <i></i>
-    <h2>НАВЫКИ</h2>
-    <p>
-
-<h5 id="1-windows">1. Windows</h5>
-<p>Администрирование серверов Windows; DHCP, DNS, active directory, MS Office</p>
-<h5 id="2-linux">2. Linux</h5>
-<p>Администрирование серверов linux: Ubuntu, Debian, RedHat, Centos; bash - базовый уровень; Docker</p>
-<h5 id="3-nas">3. NAS</h5>
-<p>Synology (администрирование), Nextcloud (установка, настройка, администрирование)</p>
-<h5 id="4-видеонаблюдение">4. Видеонаблюдение</h5>
-<p>ISS SecurOS, SecurOS IVS VideoWall (администрирование); Dallmeier Panomera Streaming Server, Viewing Client, SMAVIA Recording Server (администрирование); Trassir-Server, client</p>
-<h5 id="5-сетевые-технологии-модель-osi-сетевое-оборудование">5. Сетевые технологии, модель osi, сетевое оборудование</h5>
-<p>Коммутаторы Cisco, Avaya, Extreme, проч. (администрирование), межсетевые экраны Cisco, Fortigate (администрирование); настройка сетевых, межсетевых подключений tcp/ip: multicast, stp, rstp, vlan, nat, проч.; развертывание VPN сетей Wireguard.</p>
-<h5 id="6-системы-виртуализации">6. Системы виртуализации</h5>
-<p>VMware (ESXI, Vcenter), KVM, Hyper-V, Docker</p>
-<h5 id="7-системы-мониторинга-логирования-и-управления">7. Системы мониторинга, логирования и управления</h5>
-<p>NetXMS, Avaya Wireless LAN Orchestration, VEEAM, SNMP, Syslog-NG, стек ELK, Ansible, wireshark, проч.</p>
-<h5 id="8-телефония-voip">8. Телефония, voip</h5>
-<p>Avaya AURA CM, SM, US, CS, ASBCE, проч. (администрирование), IP-телефонные аппараты Avaya (настройка).</p>
-<h5 id="9-wi-fi-networks">9. WI-FI networks</h5>
-<p>Avaya Wireless LAN Orchestration (администрирование), Tp-Link, Ubiquti; OpenWRT</p>
-<h5 id="10-информационная-безопасность">10. Информационная безопасность</h5>
-<p>ipsec, Kaspersky security</p>
-<h5 id="11-web-технологии">11. WEB-технологии</h5>
-<p>Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, проч.. Создание, размещение статических сайтов. Сертификаты от Let&rsquo;s Encrypt.</p>
-<h5 id="12-frontend-навыки-и-используемые-инструменты-разработчика">12. Frontend-навыки и используемые инструменты разработчика</h5>
-<p>Frontend: HTML, CSS, SASS/SCSS, grid, flex, bootstrap, GULP, Prepros, ; Инструменты: Hugo static site generator; Atom, VS Code, Codepen.io, git, проч.</p>
-<h5 id="13-общие-навыки">13. Общие навыки</h5>
-<p>Английский язык, работа в условиях многозадачности, работа в команде, календарно-сетевое планирование, управление проектами, работа с большим объёмом информации, грамотная речь, деловая переписка, проч.</p>
-</p>
+  <li class="accordeon__element">
+    <input type="radio" name="accordeon" id="open2" class="input-radio-open">
+    <header class="element__header">
+      <label class="header__title header__title--open" for="open2">
+        <i class="fa fa-plus"></i>НАВЫКИ
+      </label>
+      <label class="header__title header__title--close" for="close">
+        <i class="fa fa-minus"></i>НАВЫКИ - IT
+      </label>
+    </header>
+    <div class="element__content">
+      <div class="content__wrapper">
+        <h5 id="1-windows">1. Windows</h5>
+        <span>Администрирование серверов Windows; DHCP, DNS, active directory, MS Office</span>
+        <h5 id="2-linux">2. Linux</h5>
+        <span>Администрирование серверов linux: Ubuntu, Debian; bash - базовый уровень; Docker</span>
+        <h5 id="3-nas">3. NAS</h5>
+        <span>Synology (администрирование), Nextcloud (установка, настройка, администрирование)</span>
+        <h5 id="4-видеонаблюдение">4. Видеонаблюдение</h5>
+        <span>ISS SecurOS, SecurOS IVS VideoWall (администрирование); Dallmeier Panomera Streaming Server, Viewing Client, SMAVIA Recording Server (администрирование); Trassir-Server, client</span>
+        <h5 id="5-сетевые-технологии-модель-osi-сетевое-оборудование">5. Сетевые технологии, модель osi, сетевое оборудование</h5>
+        <span>Коммутаторы Cisco, Avaya, Extreme, проч. (администрирование), межсетевые экраны Cisco, Fortigate (администрирование); настройка сетевых, межсетевых подключений tcp/ip: multicast, stp, rstp, vlan, nat, проч.; развертывание VPN сетей Wireguard.</span>
+        <h5 id="6-системы-виртуализации">6. Системы виртуализации</h5>
+        <span>VMware (ESXI, Vcenter), KVM, Hyper-V, Docker</span>
+        <h5 id="7-системы-мониторинга-логирования-и-управления">7. Системы мониторинга, логирования и управления</h5>
+        <span>NetXMS, Avaya Wireless LAN Orchestration, VEEAM, SNMP, Syslog-NG, стек ELK, Ansible, wireshark, проч.</span>
+        <h5 id="8-телефония-voip">8. Телефония, voip</h5>
+        <span>Avaya AURA CM, SM, US, CS, ASBCE, проч. (администрирование), IP-телефонные аппараты Avaya (настройка).</span>
+        <h5 id="9-wi-fi-networks">9. WI-FI networks</h5>
+        <span>Avaya Wireless LAN Orchestration (администрирование), Tp-Link, Ubiquti; OpenWRT</span>
+        <h5 id="10-информационная-безопасность">10. Информационная безопасность</h5>
+        <span>ipsec, Kaspersky security</span>
+        <h5 id="11-web-технологии">11. WEB-технологии</h5>
+        <span>Работа с облачными провайдерами и регистраторами доменов: AWS, Oracle, Firstbyte, Reg.ru, Freenom. Развёртывание и настройка web-серверов и компонентов: Ubuntu, aapanel, nginx, fail2ban, nginx-firewall, mysql, проч.. Создание, размещение статических сайтов. Сертификаты от Let&rsquo;s Encrypt.</span>
+        <h5 id="12-frontend-навыки-и-используемые-инструменты-разработчика">12. Frontend-навыки и используемые инструменты разработчика</h5>
+        <span>Frontend: HTML, CSS, SASS/SCSS, grid, flex, bootstrap, GULP, Prepros, ; Инструменты: Hugo static site generator; Atom, VS Code, Codepen.io, git, проч.</span>
+        <h5 id="13-общие-навыки">13. Общие навыки</h5>
+        <span>Английский язык, работа в условиях многозадачности, работа в команде, календарно-сетевое планирование, управление проектами, работа с большим объёмом информации, грамотная речь, деловая переписка, проч.</span>
+      </div>
+    </div>
   </li>
-  <li>
-    <input type="checkbox" checked>
-    <i></i>
-    <h2>ИНТЕРЕСЫ</h2>
-    <p>
-
-</p>
+  <li class="accordeon__element">
+    <input type="radio" name="accordeon" id="open3" class="input-radio-open">
+    <header class="element__header">
+      <label class="header__title header__title--open" for="open3">
+        <i class="fa fa-plus"></i>ИНТЕРЕСЫ
+      </label>
+      <label class="header__title header__title--close" for="close">
+        <i class="fa fa-minus"></i>ИНТЕРЕСЫ
+      </label>
+    </header>
+    <div class="element__content">
+      <div class="content__wrapper">
+        <span>Литература</span>
+        <br><span>Туризм</span>
+        <br><span>Исследования в области метафизики</span>
+      </div>
+    </div>
+  </li>
+  <li class="accordeon__element">
+    <input type="radio" name="accordeon" id="open4" class="input-radio-open">
+    <header class="element__header">
+      <label class="header__title header__title--open" for="open4">
+        <i class="fa fa-plus"></i>ДОСТИЖЕНИЯ
+      </label>
+      <label class="header__title header__title--close" for="close">
+        <i class="fa fa-minus"></i>ДОСТИЖЕНИЯ
+      </label>
+    </header>
+    <div class="element__content">
+      <div class="content__wrapper">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nunc quis massa tristique malesuada. Nam tempus pellentesque nisl, non mattis dui aliquam nec. Pellentesque sit amet maximus felis, sit amet viverra leo. Integer malesuada facilisis erat, sed efficitur neque. Aenean congue est ac urna imperdiet ornare. Donec ex arcu, fermentum in leo in, iaculis venenatis risus. Ut vehicula aliquam aliquet.</span>
+      </div>
+    </div>
   </li>
 </ul>
 
@@ -179,6 +342,14 @@
 <script src="https://kit.fontawesome.com/67ed86a691.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+
+
+<script type="module" src="/js/ThemeManager.js"></script>
+<script type="module">
+    import {ThemeManager} from '/js/ThemeManager.js';
+    new ThemeManager(document.getElementById('themeToggle'));
+</script>
 </div>
     </div>
 </body>

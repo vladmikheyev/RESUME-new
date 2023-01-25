@@ -1,4 +1,4 @@
-<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+<nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:var(--bg-color) z:1000 ">
     <div class="
         h:full
         w:full
@@ -7,9 +7,10 @@
         px:32
         d:flex
         align-items:center
+
     ">
         <div>
-            <a href="/" class="mr-3 font:extralight">
+            <a href="/" class="mr-3 font:extralight color:var(--font-color) ">
               {{ if not .Site.Params.HeaderTitle }}
               {{ .Site.Title }}
               {{ else }}
@@ -18,7 +19,7 @@
             </a>
         </div>
 
-        <div class="ml:auto">  
+        <div class="ml:auto">
             {{ $currentPage := . }}
             {{ $active := "" }}
             {{ range .Site.Menus.main }}
@@ -36,6 +37,9 @@
             " href="{{ .URL }}" title="{{ .Title }}">
                 {{- .Name -}}
             </a>
+            &nbsp; &nbsp; &nbsp;<!-- <button id="theme-toggle"><i class="fa fa-moon" style="color: black"></i><i class="fa fa-sun" style="color: white"></i></button> -->
+            <button id="themeToggle"></button>
+
             {{ end }}
         </div>
     </div>
