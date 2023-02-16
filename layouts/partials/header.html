@@ -28,6 +28,7 @@
             {{ end }}
             <a class="
                 font:semibold
+                color:var(--link-white-color)
                 font:fade
                 font:fade-10:hover
                 font:fade-30.active
@@ -37,10 +38,22 @@
             " href="{{ .URL }}" title="{{ .Title }}">
                 {{- .Name -}}
             </a>
-            &nbsp; &nbsp; &nbsp;<!-- <button id="theme-toggle"><i class="fa fa-moon" style="color: black"></i><i class="fa fa-sun" style="color: white"></i></button> -->
-            <button id="themeToggle"></button>
+            <!-- &nbsp; &nbsp; &nbsp; <button id="theme-toggle"><i class="fa fa-moon" style="color: black"></i><i class="fa fa-sun" style="color: white"></i></button> -->
+
 
             {{ end }}
         </div>
+<div>
+    <button id="themeToggle" class="
+          border:solid
+          b:var(--link-white-color)
+          border-width:1px
+          border-radius:40%
+          padding:1px
+          {{ $active }}
+    "></button>
+</div>
+
     </div>
 </nav>
+<script src="https://kit.fontawesome.com/67ed86a691.js" crossorigin="anonymous"></script>
