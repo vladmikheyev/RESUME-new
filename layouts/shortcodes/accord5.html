@@ -1,0 +1,269 @@
+<style>
+
+span {
+  color: var(--link-white-color);
+  font-size: 1em;
+  margin: 1em 0;
+}
+#accordeon {
+  min-height: 0;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  background-color: var(--bg-color);
+  padding: 0 0 0;
+  box-sizing: border-box;
+  transform: translate(0, 0);
+  left: 0;
+}
+header {
+  text-align: center;
+  display: table;
+  margin: 0.5em auto;
+}
+h1 {
+  color: var(--link-white-color);
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 3px;
+  margin: 1em 0 0.5em;
+  font-weight: 700;
+  border-bottom: 2px solid #666;
+}
+h2 {
+  color: var(--link-white-color);
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+}
+label {
+  color: var(--link-white-color);
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  margin-right: 2em;
+  cursor: pointer;
+}
+li article {
+  padding: 10px;
+  margin: 10px;
+  opacity: 1;
+  transform: translate(0, 0);
+  z-index: 2;
+  transition: all 500ms ease;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  color: var(--link-white-color);
+}
+article,
+ul li i:before,
+ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  margin: 0;
+  padding: 0 0;
+  border-top: 1px solid #ccc;
+}
+ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 0;
+  right: 0;
+}
+ul li i:before,
+ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: var(--bg-color);
+  width: 3px;
+  height: 16px;
+}
+ul li i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul li input[type=checkbox]:checked ~ article {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ i:before {
+  margin-top: 9px;
+  height: 9px;
+  transform: translate(2px, 0) rotate(45deg);
+}
+ul li input[type=checkbox]:checked ~ i:after {
+  margin-top: 9px;
+  height: 9px;
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+ul li:nth-of-type(1) {
+  border-top: none;
+  animation-delay: 0.5s;
+}
+ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+li {
+  animation: bounceInUp 1s ease both;
+}
+
+</style>
+
+
+ <section id="accordeon">
+  <ul>
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-1">
+      <i></i>
+      <label for="check-1">1. Обеспечение правильного функционирования инженерно-технических средств локально-вычислительной сети, включая систему видеонаблюдения на стадионе "Волгоград-Арена"</label>
+      <article class="panel"><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem psum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+    </article>
+      </li>
+      <li>
+        <input tabindex="0" type="checkbox" checked id="check-2">
+        <i></i>
+        <label for="check-2">2. Администрирование и конфигурирование автоматической телефонной станции Avaya AURA, настройка, конфигурирование IP-телефонов Avaya</label>
+        <article class="panel"><span>
+           - Обеспечение корректной работу телефонной станции Avaya AURA и IP-телефонов;
+          <br> - Ответы на вопросы пользователей по работе с телефонной станцией и IP-телефонными аппаратами;
+          <br> - Настройка и обслуживание аппаратного и программного обеспечения системы:
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;- Avaya Communication Manager - администрирование;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;- Avaya Session Manager 6.2, 7.1 - администрирование;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;- Avaya System Manager 6.2, 7.1 - администрирование;
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;- Avaya Utility Server, SBSE, AVP, проч.;
+          <br> - Управление лицензиями, конфигурирование, управление сертификатами CA для TLS;
+          <br> - Подключение и настройка IP-телефонов Avaya 96xx Series, J129 IP Deskphone и др.;
+          <br> - Поддержка бесперебойной и безопасной работы;
+          <br> - Мониторинг быстродействия, а также исследовавать возможные причины задержек при работе;
+          <br> - Организация предусмотренного ремонта или замены программного и аппаратного обеспечения, если необходимо;
+          <br> - Запись и анализ свойственных системе неисправностей или аномальных ситуаций;
+          <br> - Отслеживание и документирование результатов проверки системы.
+        </span></article>
+        </li>
+        <li>
+          <input tabindex="0" type="checkbox" checked id="check-3">
+          <i></i>
+          <label for="check-3">3. Выполнение функций веб-инженера, включая разработку веб-сайта volgogradarena.com и локальных веб-приложений</label>
+         <article class="panel"><span> - разработка бэк-энда сайта и поддержание его работоспособности;
+         <br> - настройка сайта и внешнего протокола передачи данных (включая HTTPS);
+         <br> - консультирование коллег из коммерческого отдела по вопросам хостинга и работы сайта;
+         <br> - создание и поддержка локальных веб-приложений (телефонный справочник и т.п.);
+         <br> - мониторинг и обеспечение безопасности веб-сайта;
+         <br> - диагностика и исправление ошибок на сайте;
+         <br> - оптимизация времени загрузки страниц.</span></article>
+        </li>
+        <li>
+          <input tabindex="0" type="checkbox" checked id="check-4">
+          <i></i>
+          <label for="check-4">4. Установка и конфигурация сетевых устройств, таких как роутеры, коммутаторы,
+             маршрутизаторы, модемы и другие активные устройства, в том числе настройка и устранение неполадок на сетевых устройствах и компьютерах</label>
+          <article class="panel"><span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span></article>
+    </li>
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-5">
+      <i></i>
+      <label for="check-5">5. Организация технического обслуживания, установка, конфигурирование и администрирование
+         корпоративной сети, включая настройку и устранение неполадок в сетевых сервисах, таких как DNS, DHCP, FTP и других,
+          поддержка, администрирование веб-сервисов (Dallmeier Panomera Streaming Server, Recording Server,
+           Avaya Wireless LAN Orchestration, Avaya AURA CM, SM, ASBCE, NAS Synology, NGFW Fortigate и проч.)
+</label>
+      <article class="panel">
+
+        <li>
+          <input tabindex="0" type="checkbox" checked id="check-12">
+          <i></i>
+          <label for="check-12">- Осуществление контроля за техническим состоянием инженерно-технических
+             средств и определение пригодности к дальнейшей эксплуатации</label>
+         <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article>
+        </li>
+      </article>
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-6">
+      <i></i>
+      <label for="check-6">6. Осуществление разработки перспективных и текущих планов
+         (графиков) различных видов ремонта инженерно-технических средств , а также мер по улучшению их эксплуатации и обслуживания</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-7">
+      <i></i>
+      <label for="check-7">7. Анализ причин неисправностей и сбоев в работе инженерно-технических
+         средств , участие в расследовании их причин, принятие мер по их предупреждению</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-8">
+      <i></i>
+      <label for="check-8">8. Обучение работников ЧОП правилам использования инженерно-технических
+         средств  и оперативного наблюдения, оперативной связи, осуществление контроля за соблюдением ими правил техники безопасности</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-9">
+      <i></i>
+      <label for="check-9">9. Разработка предложений по технической оснащенности современными техническими средствами  помещений и периметра прилегающей территории стадиона</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-10">
+      <i></i>
+      <label for="check-10">10. Оформление отчетной документации по наличию, исправности и ремонту инженерно-технических средств</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+    <li>
+      <input tabindex="0" type="checkbox" checked id="check-11">
+      <i></i>
+      <label for="check-11">11. Осуществление контроля за техническим состоянием инженерно-технических
+         средств и определение пригодности к дальнейшей эксплуатации</label>
+    <!--  <article class="panel"><span>Lorem ipsum dolor sit amet.</span></article> -->
+    </li>
+
+  </ul>
+</section>
+
+
+<script>
+
+  function checked(obj) {
+  var x = obj.getAttribute("href").split('#')[1];
+	if ((x != '') && (x != '#undefined')) {
+		document.getElementById(x).checked = false;
+	}
+  return false;
+}
+</script>
