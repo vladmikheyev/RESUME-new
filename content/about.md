@@ -7,4 +7,4 @@ author = "Владислав Михеев"
 
 ![](/img/my-photo.jpg)
 
-{{< accord4 >}}
+{{< accord6 >}}
