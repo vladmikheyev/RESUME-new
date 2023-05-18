@@ -14,7 +14,7 @@
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://vlad.gq/about/</guid>
-      <description>:root { --size-header: 2.25rem; --size-accordion-title: 1.25rem; --size-accordion-content: 1rem; --animation-speed: 100; --slide-ease: cubic-bezier(0.86, 0, 0.07, 1); --slide-duration: calc(400ms * 100 / var(--animation-speed)); --slide-delay: calc(450ms * 100 / var(--animation-speed)); --circle-duration: calc(900ms * 100 / var(--animation-speed)); } *, *::before, *::after { position: relative; left: 0; top: 0; box-sizing: border-box; } a, p, h1 { margin: 0; } html { height: 100%; } body { margin: 0; display: grid; place-items: center; padding: 2rem 2rem; min-height: 100%; } html, body { scroll-behavior: smooth; scroll-padding-top: 1rem; } main  h1 { font-size: var(--size-header); margin-bottom: 1.</description>
+      <description>@property --rotate {syntax: &#34;&#34;;initial-value: 132deg;inherits: false;}:root {--card-height: 27vh;--card-width: calc(var(--card-height) / 1.45);}body {min-height: 100vh;background: var(--bg-color);display: flex;align-items: center;flex-direction: column;padding-top: 2rem;padding-bottom: 2rem;box-sizing: border-box;}.card {background: var(--bg-color);width: var(--card-width);height: var(--card-height);padding: 3px;position: relative;border-radius: 6px;justify-content: center;align-items: center;text-align: center;display: flex;font-size: 1.5em;color: rgb(88 199 250 / 0%);cursor: pointer;font-family: cursive;}.</description>
     </item>
     
     <item>
