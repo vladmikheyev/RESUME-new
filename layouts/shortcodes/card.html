@@ -104,26 +104,18 @@
 
 </style>
 
-<!-- <div class="card">
-  <img src="/img/my-photo.jpg" alt="" />
-</div> -->
 
 <div class="card">
-<a data-fancybox="gallery2" data-src="{{ .Get "src" }}"><img style="max-width: 100%; border-radius: 5px;" src="{{ .Get "src1" }}" /></a>
-<a data-fancybox="gallery2" data-src="{{ .Get "src2" }}"><img style="max-width: 100%; border-radius: 5px;" src="{{ .Get "src3" }}" /></a>
-<a data-fancybox="gallery2" data-src="{{ .Get "src4" }}"><img style="max-width: 100%; border-radius: 5px;" src="{{ .Get "src5" }}" /></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src1" }}"><img style="max-width: 100%; border-radius: 5px;" src="{{ .Get "src0" }}" /></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src2" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src3" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src4" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src5" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src6" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src7" }}"></a>
+<a data-fancybox="gallery" data-src="{{ .Get "src8" }}"></a>
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox/fancybox.umd.js"></script>
+
 <script type="module" src="/js/index.js"></script>
-<script>
-  Fancybox.bind('[data-fancybox="gallery2"]', {
-  // Your custom options
-  // Thumbs: false,
-
-});
-
-</script>
