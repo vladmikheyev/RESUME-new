@@ -9,7 +9,7 @@ description = "Волгоград, www.volgogradarena.com, эксплуатац�
 
 ###### Государственная организация
 
-{{< img-href-src href="https://volgogradarena.com" src="/img/logo.png" >}}
+{{< img-href-src href="https://volgogradarena.com" src="/img/logo.png" txt="САЙТ" >}}
 
 
 #### Инженер

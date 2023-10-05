@@ -9,7 +9,7 @@ description = "Москва, www.sportin.su, строительство и эк�
 
 ###### Государственная организация
 
-{{< img-href-src href="https://www.youtube.com/@user-rp5mw5us9u/videos" src="/img/sport-in-x-603.jpg" >}}
+{{< img-href-src href="https://www.youtube.com/@user-rp5mw5us9u/videos" src="/img/sport-in-x-603.jpg" txt="YOUTUBE" >}}
 
 ###### Строительство, недвижимость, эксплуатация, проектирование
 
