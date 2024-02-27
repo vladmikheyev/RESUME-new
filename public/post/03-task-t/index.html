@@ -9,7 +9,7 @@
 
     
     
-    <meta name="description" content="С июля 2017г. по декабрь 2017г. гор.Москва. Частная организация. Системный интегратор в области обеспечения безопасности. Строительно-монтажные и пуско-наладочные работы инженерных систем и систем безопасности. Проектирование слаботочных систем и систем безопасности. Комплексное оснащение объектов различного назначения системами безопасности. Инженер ПТО 1. Осуществление технического надзора за выполнением строительно-монтажных работ систем видеонаблюдения, выявления диверсионно-террористических средств, охранно-тревожной сигнализации, систем билетно-пропускной и контроля доступа на объекте &ldquo;Строительство стадиона на 45000 мест в г.Волгограде&rdquo;; 2. Проверка соответствия объемов строительно-монтажных работ утвержденной проектно-сметной документации, рабочим чертежам, строительным нормам и правилам, стандартам, техническим условиям, нормам охраны труда; 3." />
+    <meta name="description" content="С июля 2017г. по декабрь 2017г. гор.Москва. Частная организация. Системный интегратор в области обеспечения безопасности. САЙТСтроительно-монтажные и пуско-наладочные работы инженерных систем и систем безопасности. Проектирование слаботочных систем и систем безопасности. Комплексное оснащение объектов различного назначения системами безопасности. Инженер ПТО 1. Осуществление технического надзора за выполнением строительно-монтажных работ систем видеонаблюдения, выявления диверсионно-террористических средств, охранно-тревожной сигнализации, систем билетно-пропускной и контроля доступа на объекте &ldquo;Строительство стадиона на 45000 мест в г.Волгограде&rdquo;; 2. Проверка соответствия объемов строительно-монтажных работ утвержденной проектно-сметной документации, рабочим чертежам, строительным нормам и правилам, стандартам, техническим условиям, нормам охраны труда; 3." />
     <meta name="author" content="Владислав Михеев" />
     
 
@@ -132,9 +132,91 @@
     font-weight: normal;
     fa-style-family-classic: "Font Awesome 6 Free";
   }
+
+
+ 
+.hover-effect-scale {
+    list-style:none;
+    margin: 10 auto;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+.hover-effect-scale li {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    border: 5px solid #fff;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+ 
+.hover-effect-scale li h3{
+    color: #fff;
+    margin: 5px;
+}
+.hover-effect-scale li p{
+    color: #fff;
+    margin: 5px;
+}
+.hover-effect-scale li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-scale li a:hover {
+    background: #454545;
+    color: #fff;
+}
+ 
+.hover-effect-scale li > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-scale li:hover > div {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-scale li div {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.35);  
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+.hover-effect-scale li img {
+    transition: all 0.2s linear;
+}
+.hover-effect-scale li:hover img {
+    transform: scale(1.2);
+}
+.hover-effect-scale li:hover div {
+    opacity: 1;
+}
+
 </style>
 
-<br><a href="http://taskt.ru" target="_blank"><img src="/img/task-t.png" border="0" alt=""></a><br>
+
+<ul class="hover-effect-scale">
+  <li>
+    <img src="/img/task-t.png" alt="">
+    <div>
+      <p></p>
+      <a href="http://taskt.ru">САЙТ</a>
+    </div>
+  </li>
+</ul>
 
 <h6 id="строительно-монтажные-и-пуско-наладочные-работы-инженерных-систем-и-систем-безопасности-проектирование-слаботочных-систем-и-систем-безопасности-комплексное-оснащение-объектов-различного-назначения-системами-безопасности">Строительно-монтажные и пуско-наладочные работы инженерных систем и систем безопасности. Проектирование слаботочных систем и систем безопасности. Комплексное оснащение объектов различного назначения системами безопасности.</h6>
 <h4 id="инженер-пто">Инженер ПТО</h4>
@@ -196,9 +278,11 @@
        background-color: #707070;
        color: #D6D6D6;
    }
+   
  </style>
  
  <a style="text-decoration: none;" href="/post/04-technopark/" class="button button2">>>></a>
+ 
 </p>
 </div></article>
 <footer class="py:24">
