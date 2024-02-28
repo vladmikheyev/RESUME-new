@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@contentful/f36-components": "^4.58.0"
+  }
+}
